@@ -1,9 +1,7 @@
 def generator_file():
     with open('test.txt', 'r') as file:
-        yield file.readline()
-        yield file.readline()
-        yield file.readline()
-
+        for line in file:
+            yield line
 
 
 
